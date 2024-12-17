@@ -1,4 +1,4 @@
-<img src="assets/ldb-logo5.webp" alt="LDB" width="115" align="left"><div align="center"><h1>A Large Language Model Debugger via Verifying Runtime Execution Step by Step</h1></div>
+<img src="assets/ldb-logo5.webp" alt="LDB" width="115" align="left"><div align="center"><h1>A Large Language Model(CodeLlama-7b-hf) and LDB Debugger via Verifying Runtime Execution Step by Step</h1></div>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2402.16906">
@@ -32,11 +32,6 @@ python -m pip install -r requirements.txt
 
 ### Set Environment
 
-If you use OpenAI models as backbones:
-
-```bash
-export OPENAI_API_KEY=[your OpenAI API Key]
-```
 
 If you use `starcoder` or `codellama`, we recommend to setup an OpenAI compatible server based on vLLM. Here is the instruction [Setup vLLM backbones](#setup-vllm-backbones).
 
@@ -54,7 +49,7 @@ Available options:
 | Option  | Value                                                                        |
 | ------- | ---------------------------------------------------------------------------- |
 | dataset | `humaneval`, `mbpp`, `transcoder`                                                                            |
-| model   | `gpt-3.5-turbo-0613`, `gpt-4-1106-preview`, `starcoder`, `codellama` (codellama/CodeLlama-34b-Instruct-hf)   |
+| model   | `codellama` (codellama/CodeLlama-7b-hf)   |
 
 ### Debug Programs
 
@@ -72,7 +67,7 @@ Available options:
 | Option  | Value|
 | ------- | --------------------------------------------------------------------|
 | dataset | `humaneval`, `mbpp`, `transcoder`  |
-| model   | `gpt-3.5-turbo-0613`, `gpt-4-1106-preview`, `starcoder`, `codellama` (codellama/CodeLlama-34b-Instruct-hf)|
+| model   | `codellama` (codellama/CodeLlama-7b-hf)|
 | seed    | Path to the seed program you want to debug. You can find the seed programs we use in experiments in `input_data/[dataset]/seed/[model]/seed.jsonl`.|
 
 ### Setup vLLM backbones
@@ -81,7 +76,7 @@ We use the OpenAI compatible server based on vLLM. Please refer [OpenAI-Compatib
 ```bash
 python -m vllm.entrypoints.openai.api_server --model bigcode/starcoder
 ```
-LDB automatically sets up the connection to your local servers when you specify model `starcoder` or `codellama`.
+LDB automatically sets up the connection to your local servers when you specify model `codellama`.
 
 If your server port is not the default `8000`, please set the option `--port` in `run_simple.sh` or `run_ldb.sh` to your local server port.
 
