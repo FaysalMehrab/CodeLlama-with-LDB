@@ -48,7 +48,7 @@ Available options:
 
 | Option  | Value                                                                        |
 | ------- | ---------------------------------------------------------------------------- |
-| dataset | `humaneval`, `mbpp`, `transcoder`                                                                            |
+| dataset | `humaneval`, `mbpp`, `transcoder`, `reflexion`                                                                            |
 | model   | `codellama` (codellama/CodeLlama-7b-hf)   |
 
 ### Debug Programs
@@ -66,7 +66,7 @@ Available options:
 
 | Option  | Value|
 | ------- | --------------------------------------------------------------------|
-| dataset | `humaneval`, `mbpp`, `transcoder`  |
+| dataset | `humaneval`, `mbpp`, `transcoder`, `reflexion`   |
 | model   | `codellama` (codellama/CodeLlama-7b-hf)|
 | seed    | Path to the seed program you want to debug. You can find the seed programs we use in experiments in `input_data/[dataset]/seed/[model]/seed.jsonl`.|
 
