@@ -1,4 +1,4 @@
-<img src="![Codellama](https://github.com/user-attachments/assets/c9715a81-e1f9-402b-b0a1-6bde61e5421a)
+<img src="![Codellama](https://github.com/user-attachments/assets/be7af4a4-5c18-4cae-bfce-d8d64420882d)
 " alt="LDB" width="115" align="left"><div align="center"><h1>A Large Language Model(CodeLlama-7b-hf) and LDB Debugger via Verifying Runtime Execution Step by Step</h1></div>
 
 <p align="center">
